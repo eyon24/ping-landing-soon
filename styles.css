@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  height: 95%;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-img {
+  justify-items: center;
+  width: 20%;
+}
+
+#subscribe-container {
+  width: 90%;
+}
+
+#sub-and-not-text {
+  margin-bottom: 2rem;
+}
+
+#db-img {
+  width: 100%;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#input,
+#btn {
+  outline: none;
+  border: 1px solid #c2d3ff;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+#input {
+  color: #969696;
+}
+
+#btn {
+  background-color: #4f7df3;
+  color: white;
+}
+
+#error-msg {
+  display: none;
+  color: #ff5263;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.soon-text {
+  font-size: 22px;
+  letter-spacing: 0.13rem;
+}
+
+#soon {
+  display: inline;
+  font-weight: 700;
+}
+
+#btn {
+  font-weight: 600;
+}
+
+#cr-link-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link-container {
+  outline: 1px solid #c2d3ff;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  filter: invert(43%) sepia(66%) saturate(854%) hue-rotate(193deg)
+    brightness(96%) contrast(98%);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+p {
+  font-size: 12px;
+}
