@@ -21,52 +21,52 @@
         </h1>
         <p id="sub-and-not-text">Subscribe and get notified</p>
         <div id="input-container">
-          <input id="input" type="text" placeholder="Your email address..." />
-          <span id="error-msg">Please provide a valid email address</span>
+          <input
+            id="input"
+            class="input-no-error"
+            type="text"
+            placeholder="Your email address..."
+          />
+
+          <span id="error-msg" class="hide"
+            >Please provide a valid email address</span
+          >
           <button id="btn" onclick="email()">Notify Me</button>
         </div>
       </div>
 
       <img id="db-img" src="./images/illustration-dashboard.png" alt="" />
-
+    </div>
+    <footer>
       <div id="cr-link-footer">
         <div id="links">
-          <div class="link-container">
+          <a href="https://www.facebook.com" class="link-container">
             <img
-              width="20"
-              height="20"
+              width="15"
+              height="15"
               src="https://img.icons8.com/ios-glyphs/30/facebook-f.png"
               alt="facebook-f"
             />
-          </div>
-          <div class="link-container">
+          </a>
+          <a href="https://www.twitter.com" class="link-container">
             <img
-              width="20"
-              height="20"
+              width="15"
+              height="15"
               src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png"
               alt="twitter--v1"
             />
-          </div>
-          <div class="link-container">
+          </a>
+          <a href="https://www.instagram.com" class="link-container">
             <img
-              width="20"
-              height="20"
+              width="15"
+              height="15"
               src="https://img.icons8.com/ios/50/instagram-new--v1.png"
               alt="instagram-new--v1"
             />
-          </div>
+          </a>
         </div>
         <p>&copy; Copyright Ping. All rights reserved.</p>
       </div>
-    </div>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://www.frontendmentor.io/profile/eyon24">Eric Yon</a>.
-      </p>
     </footer>
     <script src="./myscripts.js"></script>
   </body>

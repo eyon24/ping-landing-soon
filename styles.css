@@ -12,17 +12,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
 }
 
 #container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   text-align: center;
   padding: 1.5rem;
   padding-bottom: 0;
-  height: 95%;
 }
 
 #logo-container {
@@ -34,6 +35,7 @@ body {
 #logo-img {
   justify-items: center;
   width: 20%;
+  margin-top: 15%;
 }
 
 #subscribe-container {
@@ -42,6 +44,10 @@ body {
 
 #sub-and-not-text {
   margin-bottom: 2rem;
+}
+
+p {
+  font-size: 16px;
 }
 
 #db-img {
@@ -57,7 +63,6 @@ body {
 #input,
 #btn {
   outline: none;
-  border: 1px solid #c2d3ff;
   padding: 1rem;
   border-radius: 2rem;
 }
@@ -66,14 +71,38 @@ body {
   color: #969696;
 }
 
+.input-no-error {
+  border: 1px solid #c2d3ff;
+}
+
+.input-error {
+  border: 1px solid #ff5263;
+}
+
 #btn {
   background-color: #4f7df3;
-  color: white;
+  color: #ffffff;
+  border: none;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: #4f7df3be;
+  transition: background-color 0.25s ease-in-out;
 }
 
 #error-msg {
-  display: none;
   color: #ff5263;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 h1 {
@@ -118,17 +147,89 @@ h1 {
   width: 40%;
   justify-content: space-between;
   align-items: center;
+}
+
+#links img {
   filter: invert(43%) sepia(66%) saturate(854%) hue-rotate(193deg)
     brightness(96%) contrast(98%);
 }
 
 footer {
+  position: fixed;
   display: flex;
+  width: 100%;
+  bottom: 1em;
+  margin-top: auto;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
-p {
-  font-size: 12px;
+footer p {
+  color: #969696;
+}
+
+@media only screen and (min-width: 481px) {
+  #container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #logo-img {
+    width: 20%;
+    margin-top: 10%;
+  }
+
+  #input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1rem;
+    grid-template-areas:
+      "input input button"
+      "error error none";
+  }
+
+  #input {
+    grid-area: input;
+  }
+
+  #btn {
+    grid-area: button;
+  }
+
+  #error-msg {
+    grid-area: error;
+    margin-bottom: none;
+  }
+
+  #links {
+    width: 15%;
+  }
+
+  a:hover {
+    background-color: #4f7df3;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  #links a:hover img {
+    filter: invert(100%) sepia(15%) saturate(0%) hue-rotate(37deg)
+      brightness(106%) contrast(102%);
+    transition: filter 0.25s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #container {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  #logo-img {
+    width: 15%;
+    margin-top: 5%;
+  }
+
+  #links {
+    width: 10%;
+  }
 }
