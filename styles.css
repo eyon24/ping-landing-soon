@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -40,10 +46,9 @@ body {
 
 #subscribe-container {
   width: 90%;
-}
-
-#sub-and-not-text {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 p {
@@ -110,13 +115,17 @@ h1 {
 }
 
 .soon-text {
-  font-size: 22px;
+  font-size: 2rem;
   letter-spacing: 0.13rem;
 }
 
 #soon {
-  display: inline;
+  display: inline-block;
   font-weight: 700;
+}
+
+p {
+  font-size: 16px;
 }
 
 #btn {
