@@ -11,63 +11,65 @@
 
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
-  <body>
-    <div id="container">
-      <img id="logo-img" src="./images/logo.svg" alt="logo" />
-      <div id="subscribe-container">
-        <span class="soon-text">
-          We are launching
-          <p id="soon" class="soon-text">soon!</p>
-        </span>
-        <p id="sub-and-not-text">Subscribe and get notified</p>
-        <div id="input-container">
-          <input
-            id="input"
-            class="input-no-error"
-            type="text"
-            placeholder="Your email address..."
-          />
+  <main>
+    <body>
+      <div id="container">
+        <img id="logo-img" src="./images/logo.svg" alt="logo" />
+        <div id="subscribe-container">
+          <div id="text-container">
+            <h1 class="soon-text">We are launching</h1>
+            <p id="soon" class="soon-text">soon!</p>
+          </div>
+          <p id="sub-and-not-text">Subscribe and get notified</p>
+          <div id="input-container">
+            <input
+              id="input"
+              class="input-no-error"
+              type="text"
+              placeholder="Your email address..."
+            />
 
-          <span id="error-msg" class="hide"
-            >Please provide a valid email address</span
-          >
-          <button id="btn" onclick="email()">Notify Me</button>
+            <span id="error-msg" class="hide"
+              >Please provide a valid email address</span
+            >
+            <button id="btn" onclick="email()">Notify Me</button>
+          </div>
         </div>
-      </div>
 
-      <img id="db-img" src="./images/illustration-dashboard.png" alt="" />
-    </div>
-    <footer>
-      <div id="cr-link-footer">
-        <div id="links">
-          <a href="https://www.facebook.com" class="link-container">
-            <img
-              width="15"
-              height="15"
-              src="https://img.icons8.com/ios-glyphs/30/facebook-f.png"
-              alt="facebook-f"
-            />
-          </a>
-          <a href="https://www.twitter.com" class="link-container">
-            <img
-              width="15"
-              height="15"
-              src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png"
-              alt="twitter--v1"
-            />
-          </a>
-          <a href="https://www.instagram.com" class="link-container">
-            <img
-              width="15"
-              height="15"
-              src="https://img.icons8.com/ios/50/instagram-new--v1.png"
-              alt="instagram-new--v1"
-            />
-          </a>
-        </div>
-        <p>&copy; Copyright Ping. All rights reserved.</p>
+        <img id="db-img" src="./images/illustration-dashboard.png" alt="" />
       </div>
-    </footer>
-    <script src="./myscripts.js"></script>
-  </body>
+      <footer>
+        <div id="cr-link-footer">
+          <div id="links">
+            <a href="https://www.facebook.com" class="link-container">
+              <img
+                width="15"
+                height="15"
+                src="https://img.icons8.com/ios-glyphs/30/facebook-f.png"
+                alt="facebook-f"
+              />
+            </a>
+            <a href="https://www.twitter.com" class="link-container">
+              <img
+                width="15"
+                height="15"
+                src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png"
+                alt="twitter--v1"
+              />
+            </a>
+            <a href="https://www.instagram.com" class="link-container">
+              <img
+                width="15"
+                height="15"
+                src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+                alt="instagram-new--v1"
+              />
+            </a>
+          </div>
+          <p>&copy; Copyright Ping. All rights reserved.</p>
+        </div>
+      </footer>
+      <script src="./myscripts.js"></script>
+    </body>
+  </main>
 </html>
